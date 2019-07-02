@@ -1,5 +1,6 @@
 #import "startApp.h"
 #import <Cordova/CDV.h>
+#import <objc/runtime.h>
 
 @implementation startApp
 
