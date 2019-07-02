@@ -11,14 +11,10 @@ Last version 6.1.6
 *  Add types of extras.
 
 # Install
-
-> Install: ```cordova plugin add com.lampa.startapp```
 > 
-> Install: ```cordova plugin add https://github.com/lampaa/com.lampa.startapp.git```
+> Install: ```cordova plugin add https://github.com/LuisMCunha/com.lampa.startapp.git```
 > 
 > Delete:  ```cordova plugin rm com.lampa.startapp```
-> 
-> Delete previous version:  ```cordova plugin rm org.apache.cordova.startapp```
 
 [Manually installation for Android.](/MANUALLY_INSTALL.md)
 
