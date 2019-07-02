@@ -9,10 +9,13 @@
     
     NSString* scheme = [command.arguments objectAtIndex:0];
     
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:scheme]]) {
+    Class LSApplicationWorkspace_class = objc_getClass("LSApplicationWorkspace");
+    NSObject * workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+    BOOL isOpen = [workspace performSelector:@selector(openApplicationWithBundleID:) withObject:scheme];
+    
+    if(isOpen){
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:(true)];
-    }
-    else {
+    } else {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsBool:(false)];
     }
     
