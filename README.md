@@ -1,22 +1,8 @@
-
-# cordova plugin startapp
-
-Phonegap plugin for check or launch other application, get extras in phonegap app.
-
-
-Last version 6.1.6
-*  Add support java 1.6
-*  Add support java 1.7
-*  Add full support activityForResult, sendBroadcast and RegisterReceiver.
-*  Add types of extras.
-
 # Install
 > 
 > Install: ```cordova plugin add https://github.com/LuisMCunha/com.lampa.startapp.git```
 > 
 > Delete:  ```cordova plugin rm com.lampa.startapp```
-
-[Manually installation for Android.](/MANUALLY_INSTALL.md)
 
 
 **NEW!** [Script builder.](http://lampaa.github.io/com.lampa.startapp/index.html) Create script with UI builder.
