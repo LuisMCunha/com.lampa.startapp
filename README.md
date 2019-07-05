@@ -317,36 +317,22 @@ sApp.start(function(success) {
 
 Use **iOS**
 
-_Set iOS application_
+_Open with deep-link_
 
-```js
-var sApp = startApp.set("twitter://");
-```
-
-return ```startApp``` object:
 ```javascript
+var sApp = startApp.set("twitter://");
 sApp.start(function() { /* success */
 	console.log("OK");
 }, function(error) { /* fail */
 	alert(error);
 });
 ```
-or
+_Open with bundle ID_
 ```javascript
+var sApp = startApp.set("com.bundle.ID");
 sApp.check(function(values) { /* success */
 	console.log(values);
 }, function(error) { /* fail */
 	alert(error);
 });
 ```
-
-===========================================
-Tags: 
-
-Cordova start external application.
-Android open an external application.
-Phonegap start external application.
-Launching External Intents Works on Cordova.
-Android launch external activities.
-Android check app availability.
-Android launch application with parameters. 
