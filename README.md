@@ -5,9 +5,6 @@
 > Delete:  ```cordova plugin rm com.lampa.startapp```
 
 
-**NEW!** [Script builder.](http://lampaa.github.io/com.lampa.startapp/index.html) Create script with UI builder.
-
-
 # ANDROID
 
 To run other application, you need to build data:
@@ -315,7 +312,7 @@ sApp.start(function(success) {
 });
 ```
 
-Use **iOS**
+# iOS
 
 _Open with deep-link_
 
